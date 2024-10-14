@@ -1,5 +1,0 @@
-[
-  { "caption": "选择左侧", "command": "take_ours" },
-  { "caption": "选择右侧", "command": "take_theirs" },
-  { "caption": "-", "id": "end" }
-]

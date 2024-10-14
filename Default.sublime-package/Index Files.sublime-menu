@@ -1,6 +1,0 @@
-[
-	{
-		"command": "unstage_selected_files",
-		"caption": "取消暂存选定文件"
-	}
-]

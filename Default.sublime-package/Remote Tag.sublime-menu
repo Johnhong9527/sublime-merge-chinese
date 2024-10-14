@@ -1,7 +1,0 @@
-[
-    {
-        "caption": "删除远程标签",
-        "command": "delete_tag_on_remote",
-        "args": {"ref": "$ref", "remote": "$remote"}
-    }
-]

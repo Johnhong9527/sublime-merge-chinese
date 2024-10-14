@@ -1,6 +1,0 @@
-[
-	{"command": "move_to", "args": {"to": "hardbol"}, "caption": "移动到行首",},
-	{"command": "insert", "args": {"characters": "\n"}, "caption": "插入新行"},
-	{"command": "move", "args": {"by": "lines", "forward": false, "ignore_auto_complete": true}, "caption": "向上移动一行"},
-	{"command": "reindent", "args": {"force_indent": false}, "caption": "重新缩进行"}
-]
