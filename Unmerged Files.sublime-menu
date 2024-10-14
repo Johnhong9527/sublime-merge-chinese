@@ -1,0 +1,6 @@
+[
+	{
+		"command": "stage_selected_files",
+		"caption": "暂存选定文件",
+	},
+]

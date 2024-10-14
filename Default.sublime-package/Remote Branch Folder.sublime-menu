@@ -1,11 +1,27 @@
 [
     {
-        "caption": "Copy '$branch'",
+        "caption": "复制 '$branch'",
         "command": "copy_to_clipboard",
         "args": { "text": "$branch" }
     },
-    { "command": "hide_ref", "args": { "ref": "$ref" } },
-    { "command": "show_ref", "args": { "ref": "$ref" } },
-    { "command": "hide_all_refs_except", "args": { "ref": "$ref" } },
-    { "command": "show_all_refs", "args": { "ref": "$ref" } },
+    {
+        "caption": "隐藏引用",
+        "command": "hide_ref",
+        "args": { "ref": "$ref" }
+    },
+    {
+        "caption": "显示引用",
+        "command": "show_ref",
+        "args": { "ref": "$ref" }
+    },
+    {
+        "caption": "隐藏除此之外的所有引用",
+        "command": "hide_all_refs_except",
+        "args": { "ref": "$ref" }
+    },
+    {
+        "caption": "显示所有引用",
+        "command": "show_all_refs",
+        "args": { "ref": "$ref" }
+    }
 ]

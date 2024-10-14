@@ -1,0 +1,16 @@
+{
+	"auto_complete": false,
+	"auto_match_enabled": false,
+	"draw_centered": false,
+	"draw_indent_guides": false,
+	"draw_shadows": true,
+	"gutter": true,
+	"is_widget": true,
+	"is_diff": true,
+	"margin": 1,
+	"match_selection": false,
+	"scroll_past_end": false,
+	"mini_diff": false,
+	"translate_tabs_to_spaces": false,
+	"context_menu": "Diff Context.sublime-menu"
+}

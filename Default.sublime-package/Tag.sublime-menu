@@ -1,12 +1,12 @@
 [
 	{
-		"caption": "Checkout Tag $tag_name",
+		"caption": "检出标签 $tag_name",
 		"command": "checkout_branch",
 		"args": { "branch": "$ref" }
 	},
 	{
 		"command": "delete_tag",
-		"caption": "Delete Tag $tag_name",
+		"caption": "删除标签 $tag_name",
 		"args": {"ref": "$ref"}
 	},
 	{
@@ -15,11 +15,12 @@
 		{
 			"command": "push_tag",
 			"args": { "ref": "$ref" },
-			"description": "Push Tag $tag_name",
+			"description": "推送标签 $tag_name"
 		},
+		"caption": "推送标签 $tag_name"
 	},
 	{
-		"caption": "Copy '$tag_name'",
+		"caption": "复制 '$tag_name'",
 		"command": "copy_to_clipboard",
 		"args": { "text": "$tag_name" }
 	},

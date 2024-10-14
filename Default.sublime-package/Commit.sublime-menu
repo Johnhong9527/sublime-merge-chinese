@@ -12,11 +12,11 @@
 		"caption": "-",
 	},
 	{
-		"caption": "Checkout Commit",
+		"caption": "检出提交",
 		"command": "checkout_branch", "args": {"branch": "$commit"}
 	},
 	{
-		"caption": "Create Branch at Commit",
+		"caption": "在提交处创建分支",
 		"command": "show_command_palette", "args":
 		{
 			"command": "create_branch",
@@ -24,7 +24,7 @@
 		}
 	},
 	{
-		"caption": "Create Tag at Commit",
+		"caption": "在提交处创建标签",
 		"command": "show_command_palette",
 		"args":
 		{
@@ -33,25 +33,25 @@
 		},
 	},
 	{
-		"caption": "Edit Commit",
+		"caption": "编辑提交",
 		"id": "edit",
 		"children":
 		[
 			{
-				"caption": "Edit Commit Message",
+				"caption": "编辑提交消息",
 				"command": "edit_commit",
 			},
 			{
-				"caption": "Edit Commit Contents",
+				"caption": "编辑提交内容",
 				"command": "edit_commit_contents",
 				"args": { "commit": "$commit" },
 			},
 			{
-				"caption": "Squash with Parent",
+				"caption": "与父提交压缩",
 				"command": "squash_commit",
 			},
 			{
-				"caption": "Squash Selected Commits",
+				"caption": "压缩选定提交",
 				"command": "squash_commits",
 			},
 			{
@@ -59,24 +59,25 @@
 				"command": "fixup_commits",
 			},
 			{
-				"caption": "Move Commit Up",
+				"caption": "提交上移",
 				"command": "move_commit",
 				"args": { "commit": "$commit", "down": false },
 			},
 			{
-				"caption": "Move Commit Down",
+				"caption": "提交下移",
 				"command": "move_commit",
 				"args": { "commit": "$commit", "down": true },
 			},
 			{
-				"caption": "Drop Selected Commits",
+				"caption": "删除选定提交",
 				"command": "drop_commits",
 			},
 		]
 	},
-	{ "command": "revert_commit" },
+	{ "caption": "撤销提交", "command": "revert_commit" },
 	{
 		"command": "show_command_palette",
+		"caption": "拣选提交",
 		"args":
 		{
 			"command": "cherry_pick",
@@ -84,33 +85,34 @@
 	},
 	{
 		"command": "rebase_branch",
+		"caption": "变基提交",
 		"args": {"commit": "$commit"}
 	},
 	{
-		"caption": "Reset $head_ref to This Commit",
+		"caption": "将 $head_ref 重置到此提交",
 		"id": "reset",
 		"children":
 		[
 			{
-				"caption": "Soft - Keep index and working directory, differences will show as staged",
+				"caption": "Soft - 保留索引和工作目录，差异显示为已暂存",
 				"command": "reset",
 				"args": {"commit": "$commit", "mode": "soft"}
 			},
 			{
 
-				"caption": "Mixed (Default) - Keep working directory, differences will show as modifications",
+				"caption": "Mixed (默认) - 保留工作目录，差异显示为修改",
 				"command": "reset",
 				"args": {"commit": "$commit", "mode": "mixed"}
 			},
 			{
-				"caption": "Hard - Reset index and working directory, ALL local changes are discarded",
+				"caption": "Hard - 重置索引和工作目录，丢弃所有本地更改",
 				"command": "reset",
 				"args": {"commit": "$commit", "mode": "hard"}
 			},
 		]
 	},
     {
-        "command": "create_patch",
+        "caption": "创建补丁",
         "args": { "from": "$last_selected_commit", "commit": "$commit" },
     },
 	{ "caption": "-", "id": "end" }

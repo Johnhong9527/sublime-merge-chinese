@@ -1,22 +1,22 @@
 [
 	{
-		"caption": "One Column",
+		"caption": "单列视图",
 		"command": "set_preference", "args": { "setting": "side_bar_layout", "value": "tabs" },
-		"checkbox": true,
+		"checkbox": true
 	},
-		{
-		"caption": "Two Columns, Files on Left",
+	{
+		"caption": "双列视图，文件在左",
 		"command": "set_preference", "args": { "setting": "side_bar_layout", "value": "commit_graph_as_column" },
-		"checkbox": true,
+		"checkbox": true
 	},
 	{
-		"caption": "Two Columns, Files on Right",
+		"caption": "双列视图，文件在右",
 		"command": "set_preference", "args": { "setting": "side_bar_layout", "value": "locations_as_column" },
-		"checkbox": true,
+		"checkbox": true
 	},
 	{
-		"caption": "Three Columns",
+		"caption": "三列视图",
 		"command": "set_preference", "args": { "setting": "side_bar_layout", "value": "columns" },
-		"checkbox": true,
-	},
+		"checkbox": true
+	}
 ]

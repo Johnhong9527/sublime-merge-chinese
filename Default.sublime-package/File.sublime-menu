@@ -1,25 +1,30 @@
 [
 	{
-		"caption": "File History",
-		"command": "search", "args": { "query": "file:\"$path\"" }
+		"caption": "文件历史",
+		"command": "search",
+		"args": { "query": "file:\"$path\"" }
 	},
 	{
-		"caption": "Blame",
-		"command": "blame", "args": { "path": "$path" }
+		"caption": "责任追溯",
+		"command": "blame",
+		"args": { "path": "$path" }
 	},
-	{ "caption": "-" },
 	{
-		"caption": "Open in Editor…",
+		"caption": "-",
+		"id": "separator1"
+	},
+	{
+		"caption": "在编辑器中打开…",
 		"command": "open_in_editor",
 		"args": { "path": "$working_dir/$path", "line": "$line" }
 	},
 	{
-		"caption": "Open Containing Folder…",
+		"caption": "打开包含文件夹…",
 		"command": "open_dir",
 		"args": { "path": "$working_dir/$path" }
 	},
 	{
-		"caption": "Copy File Path",
+		"caption": "复制文件路径",
 		"command": "copy_to_clipboard",
 		"args": { "text": "$path" }
 	}

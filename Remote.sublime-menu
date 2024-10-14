@@ -1,16 +1,42 @@
 [
-    {
-        "command": "show_command_palette",
-        "args":
-        {
-            "command": "fetch",
-            "args": { "remote": "$remote" },
-            "description": "Fetch from $remote",
-        },
-    },
-    {
-        "description": "Delete $remote",
-        "command": "delete_remote",
-        "args": {"remote": "$remote"}
-    },
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "fetch",
+			"args": { "remote": "$remote" },
+			"description": "Fetch from $remote",
+		},
+		"caption": "从 $remote 获取数据"
+	},
+	{
+		"caption": "删除 $remote",
+		"command": "delete_remote",
+		"args": {"remote": "$remote"}
+	},
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "rename_remote",
+			"args": { "remote": "$remote" },
+			"description": "Rename $remote",
+		},
+		"caption": "重命名 $remote"
+	},
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "update_remote_url",
+			"args": { "remote": "$remote" },
+			"description": "Update Remote URL",
+		},
+		"caption": "更新远程 URL"
+	},
+	{
+		"command": "copy_to_clipboard",
+		"caption": "复制远程 URL",
+		"args": { "text": "$remote_url" }
+	},
 ]

@@ -1,0 +1,7 @@
+{
+	"spell_check": false,
+	"word_wrap": true,
+	"commit_message": true,
+	"syntax": "Packages/Default/Commit Message.sublime-syntax",
+	"context_menu": "Commit Message.sublime-menu",
+}

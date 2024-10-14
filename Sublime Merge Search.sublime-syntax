@@ -1,0 +1,38 @@
+%YAML 1.2
+---
+scope: source.sublime-merge.search
+contexts:
+  main:
+    - match: '"'
+      scope: punctuation.definition.string.begin.search
+      push: double_quoted_string
+
+    - match: '\b(and|or|not)\b'
+      scope: keyword.operator.logical.search
+
+    - match: '\b(author|branch|path|file|line|from|min-parents|max-parents|commit|tree|contents|before|after):(?=\s*\S)'
+      scope: keyword.search
+      push: search_term
+
+    - match: '\b(is-visible)\b'
+      scope: keyword.search
+
+    - match: '\('
+      scope: punctuation.section.brackets.begin.search
+    - match: '\)'
+      scope: punctuation.section.brackets.end.search
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.search
+    - match: '\\.'
+      scope: constant.character.escape.search
+    - match: '"'
+      scope: punctuation.definition.string.end.search
+      pop: true
+
+  search_term:
+    - meta_scope: meta.search-term.search
+    - match: '\w*\b'
+      pop: true
+    - match: '(?=")'
+      pop: true

@@ -1,0 +1,67 @@
+{
+	"rules":
+	[
+		{
+			"scope": "diff.deleted.side-by-side",
+			"background": "hsl(180, 9%, 95%)",
+			"foreground_adjust": "l(- 20%)"
+		},
+		{
+			"scope": "diff.inserted.side-by-side",
+			"background": "hsl(180, 9%, 95%)",
+			"foreground_adjust": "l(- 20%)"
+		},
+		{
+			"scope": "diff.fill",
+			"background": "hsl(180, 9%, 95%)",
+		},
+		{
+			"scope": "diff.inserted.merge-left",
+			"background": "hsl(114, 60%, 93%)",
+			"foreground_adjust": "l(- 20%)"
+		},
+		{
+			"scope": "diff.inserted.char.merge-left",
+			"background": "hsl(114, 60%, 85%)",
+			"foreground_adjust": "l(- 30%)"
+		},
+		{
+			"scope": "diff.border.merge-left",
+			"background": "hsl(114, 50%, 75%)",
+		},
+		{
+			"scope": "diff.inserted.merge-right",
+			"background": "hsla(205, 60%, 60%, 0.15)",
+			"foreground_adjust": "l(- 20%)"
+		},
+		{
+			"scope": "diff.inserted.char.merge-right",
+			"background": "hsla(205, 60%, 60%, 0.30)",
+			"foreground_adjust": "l(- 30%)"
+		},
+		{
+			"scope": "diff.border.merge-right",
+			"background": "hsla(205, 60%, 60%, 0.50)",
+		},
+		{
+			"scope": "diff.border.merge-conflict",
+			"background": "hsla(357, 75%, 65%, 0.50)",
+		},
+		{
+			"scope": "diff.border.merge-merged",
+			"background": "hsla(180, 60%, 40%, 0.30)",
+		},
+		{
+			"scope": "blame.border",
+			"background": "hsl(0, 0%, 88%)",
+		},
+		{
+			"scope": "blame.age-icon",
+			"foreground": "#e6861a",
+		},
+		{
+			"scope": "source.sublime-merge.preferences.git_binary",
+			"foreground": "#e6861a",
+		},
+	]
+}

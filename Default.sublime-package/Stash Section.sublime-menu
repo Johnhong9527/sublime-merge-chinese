@@ -1,6 +1,6 @@
 [
     {
-        "caption": "Clear All Stashes",
-        "command": "clear_stashes",
-    },
+        "caption": "清除所有暂存",
+        "command": "clear_stashes"
+    }
 ]

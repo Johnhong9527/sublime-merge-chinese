@@ -1,0 +1,17 @@
+{
+	"auto_complete": true,
+	"auto_match_enabled": false,
+	"draw_centered": false,
+	"draw_indent_guides": true,
+	"draw_shadows": true,
+	"gutter": true,
+	"is_widget": true,
+	"is_diff": true,
+	"margin": 1,
+	"match_selection": false,
+	"scroll_past_end": false,
+	"word_wrap": false,
+	"highlight_gutter": false,
+	"context_menu": "Widget Context.sublime-menu",
+	"mini_diff": "auto",
+}

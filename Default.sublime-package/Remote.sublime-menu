@@ -7,9 +7,10 @@
 			"args": { "remote": "$remote" },
 			"description": "Fetch from $remote",
 		},
+		"caption": "从 $remote 获取数据"
 	},
 	{
-		"caption": "Delete $remote",
+		"caption": "删除 $remote",
 		"command": "delete_remote",
 		"args": {"remote": "$remote"}
 	},
@@ -21,6 +22,7 @@
 			"args": { "remote": "$remote" },
 			"description": "Rename $remote",
 		},
+		"caption": "重命名 $remote"
 	},
 	{
 		"command": "show_command_palette",
@@ -30,10 +32,11 @@
 			"args": { "remote": "$remote" },
 			"description": "Update Remote URL",
 		},
+		"caption": "更新远程 URL"
 	},
 	{
 		"command": "copy_to_clipboard",
-		"caption": "Copy Remote URL",
+		"caption": "复制远程 URL",
 		"args": { "text": "$remote_url" }
 	},
 ]
