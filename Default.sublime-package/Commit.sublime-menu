@@ -1,0 +1,117 @@
+[
+	{
+		"caption": "复制 '$short_commit…'",
+		"command": "copy_to_clipboard",
+		"args": {"text": "$commit"}
+	},
+	{
+		"caption": "查看树状图",
+		"command": "view_tree",
+	},
+	{
+		"caption": "-",
+	},
+	{
+		"caption": "Checkout Commit",
+		"command": "checkout_branch", "args": {"branch": "$commit"}
+	},
+	{
+		"caption": "Create Branch at Commit",
+		"command": "show_command_palette", "args":
+		{
+			"command": "create_branch",
+			"args": { "from": "$commit" },
+		}
+	},
+	{
+		"caption": "Create Tag at Commit",
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "create_tag",
+			"args": { "commit": "$commit" },
+		},
+	},
+	{
+		"caption": "Edit Commit",
+		"id": "edit",
+		"children":
+		[
+			{
+				"caption": "Edit Commit Message",
+				"command": "edit_commit",
+			},
+			{
+				"caption": "Edit Commit Contents",
+				"command": "edit_commit_contents",
+				"args": { "commit": "$commit" },
+			},
+			{
+				"caption": "Squash with Parent",
+				"command": "squash_commit",
+			},
+			{
+				"caption": "Squash Selected Commits",
+				"command": "squash_commits",
+			},
+			{
+				"caption": "压缩选定的提交，忽略新的提交信息（修正）",
+				"command": "fixup_commits",
+			},
+			{
+				"caption": "Move Commit Up",
+				"command": "move_commit",
+				"args": { "commit": "$commit", "down": false },
+			},
+			{
+				"caption": "Move Commit Down",
+				"command": "move_commit",
+				"args": { "commit": "$commit", "down": true },
+			},
+			{
+				"caption": "Drop Selected Commits",
+				"command": "drop_commits",
+			},
+		]
+	},
+	{ "command": "revert_commit" },
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "cherry_pick",
+		}
+	},
+	{
+		"command": "rebase_branch",
+		"args": {"commit": "$commit"}
+	},
+	{
+		"caption": "Reset $head_ref to This Commit",
+		"id": "reset",
+		"children":
+		[
+			{
+				"caption": "Soft - Keep index and working directory, differences will show as staged",
+				"command": "reset",
+				"args": {"commit": "$commit", "mode": "soft"}
+			},
+			{
+
+				"caption": "Mixed (Default) - Keep working directory, differences will show as modifications",
+				"command": "reset",
+				"args": {"commit": "$commit", "mode": "mixed"}
+			},
+			{
+				"caption": "Hard - Reset index and working directory, ALL local changes are discarded",
+				"command": "reset",
+				"args": {"commit": "$commit", "mode": "hard"}
+			},
+		]
+	},
+    {
+        "command": "create_patch",
+        "args": { "from": "$last_selected_commit", "commit": "$commit" },
+    },
+	{ "caption": "-", "id": "end" }
+]

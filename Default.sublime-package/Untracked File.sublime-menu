@@ -1,0 +1,14 @@
+[
+	{
+		"command": "stage_file",
+		"args": { "path": "$path" },
+	},
+	{
+		"command": "delete_file",
+		"args": { "path": "$path" },
+	},
+	{
+		"command": "lfs_track_file",
+		"args": { "path": "$path" },
+	},
+]

@@ -1,0 +1,7 @@
+{
+	"syntax": "Sublime Merge Search.sublime-syntax",
+	"move_to_limit_on_up_down": false,
+	"auto_match_enabled": true,
+	"auto_complete": true,
+	"auto_complete_include_words": false,
+}

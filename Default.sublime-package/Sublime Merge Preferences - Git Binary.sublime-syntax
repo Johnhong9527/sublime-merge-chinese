@@ -1,0 +1,7 @@
+%YAML 1.2
+---
+scope: source.sublime-merge.preferences.git_binary
+contexts:
+  main:
+    - match: '^(system|bundled)$'
+      scope: keyword

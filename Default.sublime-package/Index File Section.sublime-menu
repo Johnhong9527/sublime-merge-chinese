@@ -1,0 +1,10 @@
+[
+    {
+        "command": "unstage_all",
+        "args": { "filtered": true },
+    },
+    {
+        "command": "create_patch",
+        "args": { "diff_against_index": true },
+    },
+]

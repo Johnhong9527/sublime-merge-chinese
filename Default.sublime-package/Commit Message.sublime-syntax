@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+name: Commit Message
+scope: text.plain.links
+
+contexts:
+  main:
+    - include: Git Common.sublime-syntax#references
+    - include: Git Commit.sublime-syntax#comments
+
+    - match: |
+        (?x)
+        \b(?:
+            https?://(?:(?:[\w\d\-]+(?:\.[\w\d\-.]+)+)|localhost)|  # http://
+            www\.[\w\d\-]+(?:\.[\w\d\-.]+)+                         # www.
+        )
+        /?[\w\d\-.?,!'(){}\[\]/+&@%$#=:"|~;]*                             # url path and query string
+        [\w\d\-~:/#@$*+=]                                                 # allowed end chars
+
+      scope: string.other.link.links

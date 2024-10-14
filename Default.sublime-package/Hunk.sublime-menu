@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Revert Hunk",
+        "command": "revert_diff_hunk"
+    },
+    {
+        "caption": "Cherry Pick Hunk",
+        "command": "cherrypick_hunk"
+    }
+]

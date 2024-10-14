@@ -1,0 +1,14 @@
+[
+	{
+		"caption": "Resolve Conflict",
+		"command": "resolve_merge_conflict", "args": { "path": "$path" },
+	},
+	{
+		"command": "stage_file",
+		"args": { "path": "$path" },
+	},
+	{
+		"command": "lfs_track_file",
+		"args": { "path": "$path" },
+	},
+]

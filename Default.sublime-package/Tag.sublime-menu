@@ -1,0 +1,27 @@
+[
+	{
+		"caption": "Checkout Tag $tag_name",
+		"command": "checkout_branch",
+		"args": { "branch": "$ref" }
+	},
+	{
+		"command": "delete_tag",
+		"caption": "Delete Tag $tag_name",
+		"args": {"ref": "$ref"}
+	},
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "push_tag",
+			"args": { "ref": "$ref" },
+			"description": "Push Tag $tag_name",
+		},
+	},
+	{
+		"caption": "Copy '$tag_name'",
+		"command": "copy_to_clipboard",
+		"args": { "text": "$tag_name" }
+	},
+	{ "caption": "-", "id": "end" }
+]

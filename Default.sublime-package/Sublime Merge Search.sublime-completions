@@ -1,0 +1,63 @@
+{
+    "scope": "source.sublime-merge.search - string - meta.search-term",
+
+    "completions":
+    [
+        {
+            "trigger": "author:",
+            "contents": "author:\"$0\""
+        },
+        {
+            "trigger": "branch:",
+            "contents": "branch:\"$0\""
+        },
+        {
+            "trigger": "path:",
+            "contents": "path:"
+        },
+        {
+            "trigger": "file:",
+            "contents": "file:"
+        },
+        {
+            "trigger": "line:",
+            "contents": "line:"
+        },
+        {
+            "trigger": "from:",
+            "contents": "from:"
+        },
+        {
+            "trigger": "min-parents:",
+            "contents": "min-parents:"
+        },
+        {
+            "trigger": "max-parents:",
+            "contents": "max-parents:"
+        },
+        {
+            "trigger": "commit:",
+            "contents": "commit:"
+        },
+        {
+            "trigger": "tree:",
+            "contents": "tree:"
+        },
+        {
+            "trigger": "contents:",
+            "contents": "contents:\"$0\""
+        },
+        {
+            "trigger": "before:",
+            "contents": "before:"
+        },
+        {
+            "trigger": "after:",
+            "contents": "after:"
+        },
+        {
+            "trigger": "is-visible",
+            "contents": "is-visible"
+        }
+    ]
+}

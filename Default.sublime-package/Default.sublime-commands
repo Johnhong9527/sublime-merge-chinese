@@ -1,0 +1,296 @@
+[
+	{ "caption": "View: Toggle Side Bar", "command": "toggle_side_bar" },
+
+	{
+		"caption": "Checkout…",
+		"command": "checkout_branch",
+	},
+	{
+		"caption": "Create Branch…",
+		"command": "create_branch",
+	},
+	{
+		"caption": "Create Branch from Remote Branch…",
+		"command": "checkout_branch",
+		"args":
+		{
+			"create_branch": true,
+			"local_refs": false,
+			"tag_refs": false,
+			"remote_refs": true
+		}
+	},
+	{
+		"caption": "Rename Branch…",
+		"command": "rename_branch",
+	},
+	{
+		"caption": "Delete Branch…",
+		"command": "delete_branch",
+		"args": { "prompt": false }
+	},
+	{
+		"caption": "Delete Remote Branch…",
+		"command": "delete_branch",
+		"args": { "prompt": false, "local_refs": false, "remote_refs": true }
+	},
+	{
+		"caption": "Merge Branch…",
+		"command": "merge_branch",
+	},
+	{
+		"caption": "Rebase Branch…",
+		"command": "rebase_branch",
+	},
+	{
+		"caption": "Push…",
+		"command": "push",
+		"args": { "prompt": true }
+	},
+	{
+		"caption": "Fetch…",
+		"command": "fetch",
+	},
+	{
+		"caption": "Pull…",
+		"command": "pull",
+	},
+	{
+		"caption": "Add Remote…",
+		"command": "add_remote",
+	},
+	{
+		"caption": "Delete Remote…",
+		"command": "delete_remote",
+		"args": { "prompt": false }
+	},
+	{
+		"caption": "Rename Remote…",
+		"command": "rename_remote",
+	},
+	{
+		"caption": "Stash…",
+		"command": "stash",
+	},
+	{
+		"caption": "Pop Stash\tgit stash pop",
+		"command": "pop_stash",
+	},
+	{
+		"caption": "Drop Stash…\tgit stash drop",
+		"command": "drop_stash",
+	},
+	{
+		"caption": "Clear All Stashes",
+		"command": "clear_stashes",
+	},
+	{
+		"caption": "Blame…",
+		"command": "blame",
+	},
+	{
+		"caption": "File History…",
+		"command": "file_history",
+	},
+	{
+		"caption": "Preferences…",
+		"command": "open_preferences",
+	},
+	{
+		"caption": "Stage All Modified and Untracked\tgit add -A",
+		"command": "stage_all",
+	},
+	{
+		"caption": "Stage All Modified\tgit add -u",
+		"command": "stage_all_modified",
+	},
+	{
+		"caption": "Unstage All\tgit reset",
+		"command": "unstage_all",
+	},
+	{
+		"caption": "View Tree",
+		"command": "view_tree",
+	},
+	{
+		"caption": "Navigate to Commit…",
+		"command": "navigate_to_commit",
+	},
+	{
+		"caption": "Navigate to Branch…",
+		"command": "navigate_to_branch",
+	},
+	{
+		"caption": "Navigate to Tag…",
+		"command": "navigate_to_tag",
+	},
+	{
+		"caption": "Navigate to Stash…",
+		"command": "navigate_to_stash",
+	},
+	{
+		"caption": "Create Tag…",
+		"command": "create_tag",
+	},
+	{
+		"caption": "Delete Tag…",
+		"command": "delete_tag",
+		"args": { "prompt": false }
+	},
+	{
+		"caption": "Delete Remote Tag…",
+		"command": "delete_tag_on_remote",
+		"args": { "prompt": false }
+	},
+	{
+		"caption": "Push Tag…",
+		"command": "push_tag",
+	},
+	{
+		"caption": "Delete All Untracked Files…\tgit clean -fd",
+		"command": "clean_working_dir",
+	},
+	{
+		"caption": "Apply Patch…",
+		"command": "apply_patch",
+	},
+	{
+		"caption": "Git Flow: Initialize",
+		"command": "init_gitflow",
+	},
+	{
+		"caption": "Git Flow: Configure",
+		"command": "edit_gitflow_config",
+	},
+	{
+		"caption": "Git Flow: Start Feature Branch",
+		"command": "gitflow_start_feature",
+	},
+	{
+		"caption": "Git Flow: Start Bugfix Branch",
+		"command": "gitflow_start_bugfix",
+	},
+	{
+		"caption": "Git Flow: Start Release Branch",
+		"command": "gitflow_start_release",
+	},
+	{
+		"caption": "Git Flow: Start Hotfix Branch",
+		"command": "gitflow_start_hotfix",
+	},
+	{
+		"caption": "Git Flow: Start Support Branch",
+		"command": "gitflow_start_support",
+	},
+	{
+		"caption": "Git Flow: Finish Feature Branch",
+		"command": "gitflow_finish_feature",
+	},
+	{
+		"caption": "Git Flow: Finish Bugfix Branch",
+		"command": "gitflow_finish_bugfix",
+	},
+	{
+		"caption": "Git Flow: Finish Release Branch",
+		"command": "gitflow_finish_release",
+	},
+	{
+		"caption": "Git Flow: Finish Hotfix Branch",
+		"command": "gitflow_finish_hotfix",
+	},
+	{
+		"caption": "Git Flow: Publish Feature Branch",
+		"command": "gitflow_publish_feature",
+	},
+	{
+		"caption": "Git Flow: Publish Bugfix Branch",
+		"command": "gitflow_publish_bugfix",
+	},
+	{
+		"caption": "Git Flow: Publish Release Branch",
+		"command": "gitflow_publish_release",
+	},
+	{
+		"caption": "Git Flow: Publish Hotfix Branch",
+		"command": "gitflow_publish_hotfix",
+	},
+	{
+		"caption": "Git Flow: Rebase Feature Branch",
+		"command": "gitflow_rebase_feature",
+	},
+	{
+		"caption": "Git Flow: Rebase Bugfix Branch",
+		"command": "gitflow_rebase_bugfix",
+	},
+	{
+		"caption": "Git Flow: Rebase Release Branch",
+		"command": "gitflow_rebase_release",
+	},
+	{
+		"caption": "Git Flow: Rebase Hotfix Branch",
+		"command": "gitflow_rebase_hotfix",
+	},
+	{
+		"caption": "Git Flow: Rebase Support Branch",
+		"command": "gitflow_rebase_support",
+	},
+	{
+		"caption": "Add Submodule…",
+		"command": "add_submodule",
+	},
+	{
+		"caption": "Open Submodule…",
+		"command": "open_submodule",
+	},
+	{
+		"caption": "Ignore Whitespace in Diffs: Toggle",
+		"command": "toggle_ignore_diff_whitespace",
+	},
+	{
+		"caption": "Expand Merge Commits By Default: Toggle",
+		"command": "toggle_preference",
+		"args": { "setting": "expand_merge_commits_by_default" }
+	},
+	{
+		"caption": "Select Theme",
+		"command": "select_theme",
+	},
+	{
+		"caption": "Switch Repository…",
+		"command": "quick_switch_repository",
+	},
+	{
+		"caption": "Open Containing Folder…",
+		"command": "open_dir",
+		"args": { "dir": "$working_dir" }
+	},
+	{
+		"caption": "Open Repository in Sublime Text",
+		"command": "open_dir_in_sublime_text",
+		"args": { "dir": "$working_dir" }
+	},
+	{
+		"caption": "Hide Branch…",
+		"command": "hide_ref",
+	},
+	{
+		"caption": "Show Hidden Branch…",
+		"command": "show_ref",
+	},
+	{
+		"caption": "Hide All Branches Except…",
+		"command": "hide_all_refs_except",
+	},
+	{
+		"caption": "Show All Hidden Branches",
+		"command": "show_all_refs",
+	},
+	{
+		"caption": "Set Branch Upstream",
+		"command": "set_upstream",
+	},
+	{
+		"caption": "Unset Branch Upstream",
+		"command": "unset_upstream",
+	},
+]

@@ -1,0 +1,93 @@
+[
+	{ "command": "checkout_branch", "args": { "branch": "$branch" } },
+	{
+		"command": "merge_branch",
+		"args": { "branch": "$branch" },
+	},
+	{ "command": "rebase_branch", "args": { "branch": "$branch", "commit": "$commit"} },
+	{ "command": "delete_branch", "args": { "ref": "$ref" } },
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "rename_branch",
+			"args": {"branch": "$branch"},
+			"description": "Rename $branch…",
+		}
+	},
+	{
+		"caption": "Copy '$branch'",
+		"command": "copy_to_clipboard",
+		"args": { "text": "$branch" }
+	},
+	{ "command": "hide_ref", "args": { "ref": "$ref" } },
+	{ "command": "show_ref", "args": { "ref": "$ref" } },
+	{ "command": "hide_all_refs_except", "args": { "ref": "$ref" } },
+	{ "command": "show_all_refs", "args": { "ref": "$ref" } },
+	{
+		"command": "show_command_palette",
+		"args":
+		{
+			"command": "set_upstream",
+			"args": { "branch": "$branch" },
+			"description": "Set Upstream…"
+		}
+	},
+	{
+		"caption": "Unset Upstream",
+		"command": "unset_upstream",
+		"args": { "branch": "$branch" }
+	},
+	{
+		"caption": "Search…",
+		"command": "search",
+		"args": { "query": "branch:$branch " },
+	},
+	{ "caption": "-" },
+	{
+		"caption": "Git Flow: Finish",
+		"command": "show_command_palette",
+		"args": { "command": "gitflow_finish_feature", "args": {"branch": "$branch"}},
+	},
+	{
+		"caption": "Git Flow: Finish",
+		"command": "show_command_palette",
+		"args": { "command": "gitflow_finish_bugfix", "args": {"branch": "$branch"}},
+	},
+	{
+		"caption": "Git Flow: Finish",
+		"command": "show_command_palette",
+		"args": { "command": "gitflow_finish_release", "args": {"branch": "$branch"}},
+	},
+	{
+		"caption": "Git Flow: Finish",
+		"command": "show_command_palette",
+		"args": { "command": "gitflow_finish_hotfix", "args": {"branch": "$branch"}},
+	},
+	{
+		"caption": "Git Flow: Rebase",
+		"command": "gitflow_rebase_feature",
+		"args": { "branch": "$branch" },
+	},
+	{
+		"caption": "Git Flow: Rebase",
+		"command": "gitflow_rebase_bugfix",
+		"args": { "branch": "$branch" },
+	},
+	{
+		"caption": "Git Flow: Rebase",
+		"command": "gitflow_rebase_release",
+		"args": { "branch": "$branch" },
+	},
+	{
+		"caption": "Git Flow: Rebase",
+		"command": "gitflow_rebase_hotfix",
+		"args": { "branch": "$branch" },
+	},
+	{
+		"caption": "Git Flow: Rebase",
+		"command": "gitflow_rebase_support",
+		"args": { "branch": "$branch" },
+	},
+	{ "caption": "-", "id": "end" }
+]

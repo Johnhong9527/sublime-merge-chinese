@@ -1,0 +1,10 @@
+[
+    {
+        "command": "stage_all_untracked",
+        "args": { "filtered": true },
+    },
+    {
+        "command": "clean_working_dir",
+        "args": { "filtered": true },
+    },
+]

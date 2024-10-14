@@ -1,0 +1,6 @@
+[
+    {
+        "command": "stage_all_unmerged",
+        "args": { "filtered": true },
+    },
+]

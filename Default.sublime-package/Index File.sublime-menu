@@ -1,0 +1,19 @@
+[
+	{
+		"command": "unstage_file",
+		"args": { "path": "$path" },
+	},
+	{
+		"command": "create_patch",
+		"args": { "path": "$path", "diff_against_index": true },
+	},
+	{
+		"caption": "Edit Staged Contents…",
+		"command": "edit_staged_file",
+		"args": { "staged": "$staged", "path": "$path" }
+	},
+	{
+		"command": "lfs_track_file",
+		"args": { "path": "$path" },
+	},
+]

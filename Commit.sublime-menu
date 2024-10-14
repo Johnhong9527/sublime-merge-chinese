@@ -54,7 +54,7 @@
                 "command": "squash_commits",
             },
             {
-                "caption": "Squash Selected Commits, ignoring new messages (fixup)",
+                "caption": "压缩选定的提交，忽略新的提交信息（修正）",
                 "command": "fixup_commits",
             },
             {

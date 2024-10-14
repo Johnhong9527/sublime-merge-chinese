@@ -1,0 +1,13 @@
+[
+    {
+        "command": "stage_all_modified",
+        "args": { "filtered": true, "include_unmerged": false },
+    },
+    {
+        "command": "discard_all_modified",
+        "args": { "filtered": true },
+    },
+    {
+        "command": "create_patch",
+    },
+]
